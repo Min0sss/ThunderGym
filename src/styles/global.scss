@@ -1,0 +1,19 @@
+@import 'variables'; 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $thunder-black;
+  color: $text-white;
+  font-family: $font-body;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; 
+}
+
+html {
+  scroll-behavior: smooth; 
+}

@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+
+$thunder-gold: #E6B325; 
+$thunder-black: #0a0a0a;
+$thunder-gray: #1f1f1f;
+$text-white: #ffffff;
+$text-dim: #a1a1aa;
+
+
+$font-heading: 'Oswald', sans-serif; 
+$font-body: 'Montserrat', sans-serif; 
+
+
+@mixin glass-effect {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@mixin thunder-button {
+  background-color: $thunder-gold;
+  color: $thunder-black;
+  font-family: $font-heading;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+
+  &:hover {
+    background-color: lighten($thunder-gold, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba($thunder-gold, 0.4);
+  }
+}

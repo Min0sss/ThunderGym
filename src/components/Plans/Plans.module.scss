@@ -1,0 +1,180 @@
+@import '../../styles/variables';
+
+.plansSection {
+  background-color: $thunder-black;
+  padding: 100px 0;
+
+  background: radial-gradient(circle at center, #1a1a1a 0%, $thunder-black 70%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-center: center;
+  margin-bottom: 70px;
+
+  .title {
+    font-family: $font-heading;
+    font-size: 3rem;
+    color: $text-white;
+    text-transform: uppercase;
+    
+    .gold { color: $thunder-gold; }
+  }
+
+  .subtitle {
+    color: $text-dim;
+    margin-top: 10px;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center; 
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.popular {
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid $thunder-gold;
+  transform: scale(1.1); 
+  z-index: 10;
+  box-shadow: 0 0 30px rgba($thunder-gold, 0.15); 
+
+  &:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 0 50px rgba($thunder-gold, 0.3); 
+  }
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $thunder-gold;
+  color: $thunder-black;
+  font-family: $font-heading;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.planName {
+  font-family: $font-heading;
+  color: $text-white;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.priceContainer {
+  margin-bottom: 30px;
+  
+  .currency {
+    font-size: 1.5rem;
+    color: $thunder-gold;
+    vertical-align: top;
+  }
+  
+  .price {
+    font-family: $font-heading;
+    font-size: 4rem;
+    color: $text-white;
+    font-weight: 700;
+  }
+  
+  .period {
+    color: $text-dim;
+    font-size: 1rem;
+  }
+}
+
+.features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 40px;
+  flex-grow: 1; 
+
+  li {
+    margin-bottom: 15px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+
+    .checkIcon {
+      color: $thunder-gold;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.btnGold {
+  @include thunder-button;
+  width: 100%;
+}
+
+.btnOutline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: $text-white;
+  font-family: $font-heading;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $text-white;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    flex-direction: column;
+  }
+  
+  .popular {
+    transform: scale(1);
+    width: 100%;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+  }
+  
+  .card {
+    width: 100%;
+  }
+}

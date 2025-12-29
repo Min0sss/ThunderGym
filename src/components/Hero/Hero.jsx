@@ -10,9 +10,15 @@ const Hero = () => {
         <p className={styles.description}>
           Entrenamientos personalizados a tu objetivo
         </p>
+        
         <div className={styles.actions}>
-          <button className={styles.primaryBtn}>ENTRENEMOS</button>
-          <button className={styles.secondaryBtn}>Ver Reseñas</button>
+          <a href="#planes" className={styles.primaryBtn}>
+            ENTRENEMOS
+          </a>
+          
+          <a href="#galeria" className={styles.secondaryBtn}>
+            VER RESEÑAS
+          </a>
         </div>
       </div>
     </section>

@@ -20,51 +20,51 @@ const Gallery = () => {
       type: 'image', 
       src: ref1, 
       span: 'main', 
-      alt: '',
+      alt: 'Imagen grupal con miembros del gimnasio',
       link: 'https://www.facebook.com/tomy.isusquiza' 
     },
     { 
-      id: 2, type: 'video', src: ref2, span: '', alt: '',
+      id: 2, type: 'video', src: ref2, span: '', alt: 'Entremaiento de posterior',
       link: 'https://www.facebook.com/tomy.isusquiza' 
     },
     { 
-      id: 3, type: 'video', src: ref3, span: '', alt: '',
+      id: 3, type: 'video', src: ref3, span: '', alt: 'Cardio hit',
       link: 'https://www.facebook.com/tomy.isusquiza' 
     },
     { 
-      id: 4, type: 'image', src: ref4, span: '', alt: '',
+      id: 4, type: 'image', src: ref4, span: '', alt: 'Resultado de miembro nuevo del gimnasio',
       link: 'https://www.facebook.com/tomy.isusquiza' 
     },
     { 
-      id: 5, type: 'image', src: ref5, span: '', alt: '',
+      id: 5, type: 'image', src: ref5, span: '', alt: 'Foto grupal con amigos',
       link: 'https://www.instagram.com/thunder.gymx' 
     },
     { 
-      id: 6, type: 'image', src: ref6, span: '', alt: '',
+      id: 6, type: 'image', src: ref6, span: '', alt: 'Pose de un profesional del culturismo',
       link: 'https://www.instagram.com/thunder.gymx' 
     },
     { 
-      id: 7, type: 'video', src: ref7, span: '', alt: '',
+      id: 7, type: 'video', src: ref7, span: '', alt: 'Entrenamiento de espalda en remo en T',
       link: 'https://www.instagram.com/thunder.gymx' 
     },
     { 
-      id: 8, type: 'video', src: ref8, span: '', alt: '',
+      id: 8, type: 'video', src: ref8, span: '', alt: 'Entrenamiento de hombro',
       link: 'https://www.instagram.com/thunder.gymx' 
     },
     { 
-      id: 9, type: 'video', src: ref9, span: '', alt: '',
+      id: 9, type: 'video', src: ref9, span: '', alt: 'Boxeo en accion ',
       link: 'https://www.tiktok.com/@thundernutrition1' 
     },
     { 
-      id: 10, type: 'video', src: ref10, span: '', alt: '',
+      id: 10, type: 'video', src: ref10, span: '', alt: 'Campeona de boxeo',
       link: 'https://www.tiktok.com/@thundernutrition1' 
     },
     { 
-      id: 11, type: 'video', src: ref11, span: '', alt: '',
+      id: 11, type: 'video', src: ref11, span: '', alt: 'Entrenamiento de Boxeo',
       link: 'https://www.tiktok.com/@thundernutrition1' 
     },
     { 
-      id: 12, type: 'video', src: ref12, span: '', alt: '',
+      id: 12, type: 'video', src: ref12, span: '', alt: 'Entrenamiento de piernas, Peso muerto',
       link: 'https://www.tiktok.com/@thundernutrition1' 
     },
   ];

@@ -5,7 +5,7 @@ const Plans = () => {
   const plans = [
     {
       id: 1,
-      name: "PLan Mensual",
+      name: "Plan Mensual",
       price: "80",
       period: "/mes",
       features: ["Acceso todas las maquinas", "Casilleros disponibles", "WiFi Gratis", "Horario Limitado (6am - 10pm)"],
@@ -21,7 +21,7 @@ const Plans = () => {
     },
     {
       id: 3,
-      name: "PLan Anual",
+      name: "Plan Anual",
       price: "600",
       period: "/año",
       features: ["Todo Plan Thunder", "Entrenador Personal Todo el año", "Nutricionista Mensual", "Acceso VIP Eventos", "Congelamiento de plan"],
@@ -61,9 +61,15 @@ const Plans = () => {
                 ))}
               </ul>
 
-              <button className={plan.isPopular ? styles.btnGold : styles.btnOutline}>
-                ELEGIR PLAN
-              </button>
+              <a 
+  href={`https://wa.me/51921597087?text=Hola,%20estoy%20interesado%20en%20el%20plan%20${plan.name}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={plan.isPopular ? styles.btnGold : styles.btnOutline}
+  style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }} // Estilos inline para asegurar que parezca botón
+>
+  ELEGIR PLAN
+</a>
             </div>
           ))}
         </div>

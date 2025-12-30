@@ -66,7 +66,7 @@ const Plans = () => {
   target="_blank"
   rel="noopener noreferrer"
   className={plan.isPopular ? styles.btnGold : styles.btnOutline}
-  style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }} // Estilos inline para asegurar que parezca botón
+  style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}
 >
   ELEGIR PLAN
 </a>

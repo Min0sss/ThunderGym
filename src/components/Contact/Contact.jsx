@@ -92,7 +92,7 @@ const Contact = () => {
       <div className={styles.copyright}>
         <div className={styles.copyContainer}>
             <p>© 2025 Thunder Gym. Todos los derechos reservados.</p>
-            <p className={styles.devCredit}>Desarrollado con <span className={styles.gold}>⚡</span> por <span className={styles.white}>Guillermo Contreras</span></p>
+            <p className={styles.devCredit}>Desarrollado <span className={styles.gold}>⚡</span> por <span className={styles.white}>Guillermo Contreras</span></p>
         </div>
       </div>
     </footer>
